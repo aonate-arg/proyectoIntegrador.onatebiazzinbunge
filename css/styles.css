@@ -14,7 +14,7 @@ input {
 }
 
 #logo-register {
-    
+    box-sizing: content-box;
 }
 
 .enviar-register {
