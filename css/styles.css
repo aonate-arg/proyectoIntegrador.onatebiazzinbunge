@@ -1,3 +1,15 @@
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    padding: 10px;
+}
+
 form.register {
     background-color: orange;
     border-radius: 20px;
