@@ -17,6 +17,14 @@ input {
     
 }
 
+<<<<<<< HEAD
 form.login {
     
+=======
+.enviar-register {
+    background-color: lightblue;
+    border-radius: 5px;
+    border: 1px solid #555;
+    margin: 5px 20px;
+>>>>>>> 740e0bd851fbad96c01669961ad417fa50926a1e
 }
