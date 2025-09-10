@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
-        <img src="./img/logo.png" id="logo-register" alt="logo">
+        <a href="./index.html">
+            <img src="./img/logo.png" id="logo-register-login" alt="logo">
+        </a>
     </div>
     <form class="register" action="./login.html" method="get">
         <div>
@@ -25,11 +30,11 @@
         </div>
         <div>
             <label for="pass"></label>
-            <input id="passs" type="password" name="contra" placeholder="Ingrese su contrasena" value="" required>
+            <input id="passs" type="password" name="contra" placeholder="Ingrese su contraseña" value="" required>
         </div>
         <div>
             <label for="username"></label>
-            <input id="username" type="text" name="usuario" placeholder="Ingrese su nombre de usuario" value="" required>
+            <input id="username" type="text" name="usuario" placeholder="Nombre de usuario" value="" required>
         </div>
         <div>
             <button class="enviar-register" type="submit">Enviar</button>
