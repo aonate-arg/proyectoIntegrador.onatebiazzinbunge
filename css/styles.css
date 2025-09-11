@@ -1,9 +1,17 @@
-body {
+html{
     font-family: "Roboto", sans-serif;
+    background-image: url("../img/fondohomeguitarra.jpg");
+    background-position: right bottom;
+    background-repeat: repeat;
 }
 
 header {
     display: flex;
+    background-color: white;
+}
+
+#buscador {
+    padding: 23px 0px 10px 50px;
 }
 
 ul {
@@ -46,8 +54,4 @@ input {
     border-radius: 5px;
     border: 1px solid #555;
     margin: 5px 20px;
-}
-
-#fondoguitarra {
-    height: 945px;
 }
