@@ -10,21 +10,35 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-
+     <header>
+        <a href="./index.html">    
+            <img id="logonombre" src="img/logonombre.png" alt="logonombre lenga">
+        </a>
+        <form id="buscador" action="./searchresults.html" method="get">
+            <label for="search"></label>
+            <input id="search" type="text" name="busqueda" placeholder="Busqueda" value="">
+        </form>
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./category.html">CATEGORIAS</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./register.html">REGISTRARSE</a> </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>Nombre del producto</h2>
-            <h3>Marca</h3>
-            <p>Descripcion</p>
-            <h5>Precio</h5>
-            <img src="" alt="">
-            <h4>Categoria</h4>
-            <p>Stock</p>
+        <section id="seccion-product" >
+            <h2>American Ultra Luxe Vintage '60s Stratocaster</h2>
+            <img id="foto-product" src="./img/Captura de pantalla 2025-09-12 a la(s) 9.28.13 a. m..png" alt="Stratocastor vintage 60s">
+            <h3>Fender</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis rerum cumque sit molestiae aut neque!</p>
+            <h5>$899.99</h5>
+            <h4>Stratocaster</h4>
+            <p>10 unidades disponibles</p>
             <p>Lista de tags?</p>
         </section>
-        <section>
+        <section id="seccion-product">
             <form action="get">
                 <p>Rating</p>
                 <textarea name="review" id=""></textarea>
