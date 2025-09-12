@@ -5,8 +5,8 @@ body {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     background-image: url("../img/fondohomeguitarra.jpg");
-    background-position: bottom right;
-    background-repeat: repeat;
+    background-position: top right;
+    background-attachment: fixed;
 }
 
 header {
