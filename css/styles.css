@@ -1,7 +1,7 @@
-html{
+body {
     font-family: "Roboto", sans-serif;
     background-image: url("../img/fondohomeguitarra.jpg");
-    background-position: right bottom;
+    background-position: bottom right;
     background-repeat: repeat;
 }
 
