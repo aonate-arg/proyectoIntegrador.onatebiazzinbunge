@@ -90,7 +90,7 @@ main{
     margin-top: 30px;
 }
 aside{
-    background-color: aqua;
+    background-color: rgba(255, 255, 255, 0.3);
     width: 10%;
     padding-top: 15%;
 }
@@ -104,12 +104,14 @@ section.contenido{
 section.art{
     display: flex;
     width: 100vw;
+    margin: 0 10px 0 10px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 article{
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.64);
     width: 497px;
+    margin-top: 10px;
 }
 .index{
     width: 400px;
