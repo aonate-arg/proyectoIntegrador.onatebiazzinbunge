@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px ;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -77,9 +84,38 @@ input {
     margin: 10px 1px;
 }
 
+main{
+    display: flex;
+
+    margin-top: 30px;
+}
+aside{
+    background-color: aqua;
+    width: 10%;
+    padding-top: 15%;
+}
+
+section.contenido{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+section.art{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 article{
     background-color: rgba(255, 255, 255, 0.3);
+    width: 497px;
 }
 .index{
-    width: 600px;
+    width: 400px;
+}
+.titulos{
+    width: 100vw;
+    height: 173.5px;
+    color: antiquewhite;
 }
