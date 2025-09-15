@@ -138,5 +138,6 @@ footer {
 .titulos{
     width: 100vw;
     height: 173.5px;
-    color: antiquewhite;
+    color: black;
+    background-color: #555;
 }
