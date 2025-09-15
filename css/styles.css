@@ -23,6 +23,10 @@ header {
     position: sticky;
 }
 
+ul.paginas {
+    padding: 17px;
+}
+
 #buscador {
     padding: 23px 0px 10px 50px;
 }
@@ -101,6 +105,14 @@ section.contenido{
     flex-wrap: wrap;
 
 }
+
+#vermas {
+    background-color: grey ;
+    margin: 5px 10px;
+    border: 5px ;
+    border-radius: 2px;
+}
+
 section.art{
     display: flex;
     width: 100vw;
@@ -113,9 +125,16 @@ article{
     width: 497px;
     margin-top: 10px;
 }
+
+footer {
+    background-color: lightgrey;
+    margin: 10px 0px 0px 0px;
+}
+
 .index{
     width: 400px;
 }
+
 .titulos{
     width: 100vw;
     height: 173.5px;
