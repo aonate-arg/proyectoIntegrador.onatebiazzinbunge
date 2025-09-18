@@ -129,11 +129,6 @@ article{
     margin-top: 10px;
 }
 
-footer {
-    background-color: lightgrey;
-    margin: 10px 0px 0px 0px;
-}
-
 .index{
     width: 400px;
 }
@@ -143,4 +138,10 @@ footer {
     height: 173.5px;
     color: black;
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    background-color: lightgrey;
+    margin-bottom: 0%;
+    text-align: center;
 }
