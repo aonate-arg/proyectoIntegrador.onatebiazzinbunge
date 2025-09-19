@@ -188,8 +188,12 @@ div.titulModelo{
     margin: 0 0 20px 10px;
     font-size: 30px;
 }
+div.mapita{
+    margin: 0 0 20px 10px;
+    font-size: 10px;
+}
 div.comprar{
-    margin: 130% 10px 10px 10px;
+    margin: 50px 10px 5px 10px;
     font-size: 30px;
     width: 170px;
     padding: 15px;
