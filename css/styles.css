@@ -46,6 +46,9 @@ li {
 a { text-decoration: none; }
 a:visited { text-decoration: none; color: black; }
 
+.home-product {
+    margin: 20px ;
+}
 
 form.register {
     background-color: lightgray;
@@ -101,6 +104,7 @@ aside{
     width: 10%;
     padding-top: 15%;
 }
+
 div.aside{
     margin: 20px 0 20px;
 }
@@ -109,13 +113,13 @@ section.contenido{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 #vermas {
     background-color: grey ;
-    margin: 5px 10px;
-    border: 5px ;
+    padding: 4px;
+    margin: 10px;
+    border: 50px;
     border-radius: 2px;
 }
 
@@ -130,6 +134,7 @@ article{
     background-color: rgba(255, 255, 255, 0.64);
     width: 497px;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 .index{
@@ -139,9 +144,11 @@ article{
 .titulos{
     width: 100vw;
     height: 173.5px;
-    margin-right: 10px;
+    margin: 10px;
+    padding: 10px;
     color: black;
     background-color: rgba(255, 255, 255, 0.64);
+    border-radius: 5px;
 }
 
 footer {
