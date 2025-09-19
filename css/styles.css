@@ -149,3 +149,14 @@ footer {
     margin-top: 1125px;
     text-align: center;
 }
+
+/*
+Styles del product 
+*/
+.modelo{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
