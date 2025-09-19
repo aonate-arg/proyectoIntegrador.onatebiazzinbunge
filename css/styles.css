@@ -43,6 +43,10 @@ li {
     padding: 10px;
 }
 
+/* Revisar estos a, cuando no los tocas estan en azul y estan medio
+villeros. Propongo poner el a:visited como el a normal y que cuando
+pases el cursos se modifique, eso yo lo se hacer si quieren lo hago
+:) */
 a { text-decoration: none; }
 a:visited { text-decoration: none; color: black; }
 
@@ -84,12 +88,7 @@ input {
     width: 80%;
 }
 
-#seccion-product {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 1px;
-}
+
 
 main{
     display: flex;
@@ -153,10 +152,39 @@ footer {
 /*
 Styles del product 
 */
-.modelo{
+h2.modelo{
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
+    font-size: 50px;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    
+}
+main.product{
+    display: flex;
+    flex-direction: column;
+}
+#seccion-product {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+article.titulModelo{
+    width: 287px;
+
+}
+div.titulModelo{
+    margin: 0 0 20px 10px;
+    font-size: 30px;
+}
+div.comprar{
+    margin: 130% 10px 10px 10px;
+    font-size: 30px;
+    width: 170px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
