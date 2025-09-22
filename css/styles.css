@@ -223,3 +223,11 @@ div.comprar{
     text-align: center;
     padding: 20px;
 }
+
+.pasarela {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.64);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
