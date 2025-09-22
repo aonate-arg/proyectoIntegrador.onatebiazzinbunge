@@ -47,12 +47,19 @@ li {
     padding: 10px;
 }
 
-/* Revisar estos a, cuando no los tocas estan en azul y estan medio
-villeros. Propongo poner el a:visited como el a normal y que cuando
-pases el cursos se modifique, eso yo lo se hacer si quieren lo hago
-:) */
-a { text-decoration: none; }
-a:visited { text-decoration: none; color: black; }
+a { 
+    text-decoration: none; 
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+}
+a:link { 
+    text-decoration: none; 
+    color: black; 
+}
+a:hover{
+    color: rgb(53, 53, 53);
+}
 
 .home-product {
     margin: 20px ;
