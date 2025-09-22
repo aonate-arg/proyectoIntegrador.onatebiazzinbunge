@@ -23,6 +23,10 @@ header {
     position: sticky;
 }
 
+p {
+    font-weight: bolder;
+}
+
 ul.paginas {
     padding: 17px;
 }
@@ -91,17 +95,17 @@ input {
     width: 80%;
 }
 
-
-
 main{
     display: flex;
-
+    flex: 1;
     margin-top: 30px;
 }
 aside{
     background-color: rgba(255, 255, 255, 0.3);
     width: 10%;
+    height: 100%;
     padding-top: 15%;
+    position: fixed;
 }
 
 div.aside{
@@ -112,13 +116,15 @@ section.contenido{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 10%;
 }
 
 #vermas {
     background-color: grey ;
-    padding: 4px;
-    margin: 10px;
-    border: 50px;
+    padding: 2px;
+    margin-top: 5px;
+    margin-left: 90%;
+    border: 10px;
     border-radius: 2px;
 }
 
@@ -152,7 +158,7 @@ article{
 
 footer {
     background-color: lightgrey;
-    margin-top: 1125px;
+    margin-top: 10px;
     text-align: center;
 }
 
