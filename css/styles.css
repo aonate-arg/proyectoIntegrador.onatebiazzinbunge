@@ -91,13 +91,6 @@ input {
     height: 70px;
 }
 
-.enviar-register {
-    background-color: lightblue;
-    border-radius: 5px;
-    border: 1px solid #555;
-    margin: 5px 20px;
-}
-
 #foto-product {
     width: 80%;
 }
@@ -117,6 +110,21 @@ aside{
 
 div.aside{
     margin: 20px 0 20px;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    padding: 3px;
+    border: solid black 1px;
+    border-radius: 4px;
+}
+
+#titulo-separacion {
+    color: wheat;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 }
 
 section.contenido{
