@@ -239,3 +239,20 @@ div.comprar{
     text-align: center;
     padding: 20px;
 }
+
+@media (max-width: 768px) {
+    .titulos {
+    width: 100%;
+    height: 205px;
+    margin: 20px 0px 20px 80px;
+    padding: 5px;
+    }
+    aside {
+    width: 16%;
+    height: 100%;
+    padding-top: 15%;
+    }
+}
+
+@media (max-width: 420px) {
+}
