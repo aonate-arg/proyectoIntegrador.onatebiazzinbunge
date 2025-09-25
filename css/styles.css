@@ -105,7 +105,9 @@ aside{
     width: 10%;
     height: 100%;
     padding-top: 15%;
+    padding-bottom: 15%;
     position: fixed;
+    border-radius: 5px;
 }
 
 div.aside{
@@ -149,9 +151,9 @@ section.contenido{
 
 #vermas {
     background-color: grey ;
-    padding: 2px;
-    margin-top: 5px;
-    margin-left: 90%;
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-left: 80%;
     border: 10px;
     border-radius: 2px;
 }
