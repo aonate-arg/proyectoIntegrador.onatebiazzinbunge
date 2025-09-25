@@ -121,7 +121,8 @@ button {
 }
 
 #titulo-separacion {
-    color: wheat;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.64);
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -276,8 +277,8 @@ div.rating{
     padding: 10px;
   }
     ul {
-    flex-direction: column;
     padding: 0;
+    display: flex;
   }
     a {
     font-size: 16px;
@@ -291,6 +292,8 @@ div.rating{
     width: 100%;
     padding-top: 10px;
     margin-bottom: 20px;
+    justify-items: center;
+    font-weight: 600;
   }
     section.contenido {
     width: 100%;
@@ -325,6 +328,5 @@ div.rating{
   }
     #vermas {
     margin-left: auto;
-    margin-right: auto;
   }
 }
