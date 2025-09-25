@@ -205,6 +205,9 @@ article.titulModelo{
     width: 287px;
 
 }
+p.descripcion{
+    width: 1151px;
+}
 div.titulModelo{
     margin: 0 0 20px 10px;
     font-size: 30px;
