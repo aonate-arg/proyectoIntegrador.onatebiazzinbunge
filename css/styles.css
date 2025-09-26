@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px ;
+    
 }
 
 body {
@@ -192,6 +192,17 @@ footer {
     background-color: lightgrey;
     margin-top: 10px;
     text-align: center;
+    width: 100%;
+    position: bottom fixed;
+    
+}
+
+#foot {
+    background-color: lightgrey;
+    margin-top: 40%;
+    text-align: center;
+    width: 100%;
+    position: bottom fixed;
 }
 
 /*
