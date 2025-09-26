@@ -290,6 +290,7 @@ div.rating{
 .pasarela {
     color: black;
     background-color: rgba(255, 255, 255, 0.64);
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 20px;
@@ -358,4 +359,10 @@ div.rating{
     #vermas {
     margin-left: auto;
   }
+    #foto-product {
+        width: 100%;
+    }
+    .titulModelo {
+        margin-left: 55px;
+    }
 }
