@@ -346,4 +346,10 @@ div.rating{
     #vermas {
     margin-left: auto;
   }
+    #foto-product {
+        width: 100%;
+    }
+    .titulModelo {
+        margin-left: 55px;
+    }
 }
