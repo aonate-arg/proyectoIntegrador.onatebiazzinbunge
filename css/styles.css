@@ -205,6 +205,15 @@ footer {
     position: bottom fixed;
 }
 
+#foot2 {
+    background-color: lightgrey;
+    margin-top: 24%;
+    text-align: center;
+    width: 100%;
+    position: bottom fixed;
+}
+
+
 /*
 Styles del product 
 */
