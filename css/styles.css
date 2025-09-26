@@ -365,4 +365,8 @@ div.rating{
     .titulModelo {
         margin-left: 55px;
     }
+    ol.tags {
+        margin-left: 4px;
+        font-weight: 400;
+    }
 }
