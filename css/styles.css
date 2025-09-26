@@ -231,6 +231,13 @@ div.mapita{
     margin: 0 0 20px 10px;
     font-size: 10px;
 }
+h3.stock{
+    background-color: rgba(255, 166, 0, 0.746);
+    margin: 0 20% 0 20%;
+    padding: 5px;
+    width: auto;
+    border-radius: 5px;
+}
 div.comprar{
     margin: 50px 10px 5px 10px;
     font-size: 30px;
@@ -238,7 +245,12 @@ div.comprar{
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.3);
 }
-
+ol.tags{
+    display: flex;
+    list-style-type: none;
+    margin-left: 15%;
+    width: 287px;
+}
 div.rating{
     margin-left: 30px;
 }
@@ -278,6 +290,7 @@ div.rating{
 .pasarela {
     color: black;
     background-color: rgba(255, 255, 255, 0.64);
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 20px;
@@ -346,4 +359,14 @@ div.rating{
     #vermas {
     margin-left: auto;
   }
+    #foto-product {
+        width: 100%;
+    }
+    .titulModelo {
+        margin-left: 55px;
+    }
+    ol.tags {
+        margin-left: 4px;
+        font-weight: 400;
+    }
 }
