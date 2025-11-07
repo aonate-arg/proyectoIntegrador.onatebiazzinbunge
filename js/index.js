@@ -1,14 +1,14 @@
 window.addEventListener("load", function(){
-    let api = "https://dummyjson.com/products/categories"
+    let url = "https://dummyjson.com/products"
 
-    fecth(api)
-    .then(function(response){
-        return response.json();
+    fecth(url)
+    .then(function(res){
+        return res.json();
     })
     .then(function(data){
         console.log(data);
     })
     .catch(function(error){
-        console.log("usdha")
+        console.log("error: " + error)
     })
 })
