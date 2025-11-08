@@ -9,3 +9,7 @@ window.addEventListener("load",function(){
         logeado = True
     }
 })
+
+let dsiajdiosa
+dsajidasj
+djsuiodjhioa
