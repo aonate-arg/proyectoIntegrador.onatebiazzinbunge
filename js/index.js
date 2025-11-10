@@ -10,14 +10,19 @@ window.addEventListener("load", function(){
     })
     .then(function(data){
         let resultados = data.products
-        
+
+        productos.innerHTML = ""
+        console.log(data)
+
         for(let i = 0; i < resultados.length; i++){
+            let producto = resultados[i]
             productos.innerHTML += `
             <article>
-                <h2>${i[1]}</h2>
-                <h3>${i[3]}</h3>
-                <h4>${i[0]}</h4>
-                <p>${i[2]}</p>
+                <img src="${producto.thumbnail}" width="100">
+                <h2>${producto.title}</h2>
+                <h3>${producto.brand}</h3>
+                <h4>${producto.category}</h4>
+                <p>${producto.description}</p>
             </article>
             `
         }
