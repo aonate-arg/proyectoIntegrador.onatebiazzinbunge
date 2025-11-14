@@ -14,13 +14,15 @@ window.addEventListener("load", function() {
         .then(function(data){
             let productos = data.products;
 
+            resultados.innerHTML = "";
+            
+            console.log(data);
+
             if (productos.length === 0){
                 resultados.innerHTML = "No hay resultados para el término: <strong>${searchTerm}</strong>";
                 return;
             } 
-            resultados.innerHTML = "";
             
-            console.log(data);
         })
         .catch(function(error){
             console.log("El error es: " + error);
