@@ -1,5 +1,5 @@
 window.addEventListener("load", function(){
-    let product = document.querySelector("#product")
+    let product = document.querySelector("#seccionProduct")
 
     let url = 'https://dummyjson.com/products'
     fetch(url)
@@ -8,29 +8,59 @@ window.addEventListener("load", function(){
     })
     .then(function(data){
         let resultados = data.products
-        product.innerHTML = ""
+        seccionProduct.innerHTML = ""
         console.log(data)
-        for(let i = 0; i < resultados.length; i++){
-            let producto = resultados[i]
-            product.innerHTML += `
-            <article>
-                <a href="./product.html"> <img class="index" src="${producto.thumbnail}" width="100"> </a>
-                <div>    
-                    <h2>victor</h2>
-                    <h3>${producto.brand}</h3>
-                    <h4>${producto.category}</h4>
-                    <p>${producto.description}</p>
-                </div>
-                <a id="vermas" href="product.html">Ver +</a>
-            </article>
-            `
-        }
+
+        let id = location.search;
+        let idObject = new URLSearchParams(id)
+        idObject.get("id")
+        let idSolo = Number(idObject.get("id"))
+
+        console.log(idSolo)
+
+        const posicion = idSolo - 1
+        let dato = resultados[posicion]
+        console.log(dato)
+
+        product.innerHTML = " "
+
+        product.innerHTML += `
+            <section>
+                <h2 class="modelo">${dato.title}</h2>
+                <img class="producting" id="foto-product" src="${dato.thumbnail}" alt="Stratocastor vintage 60s">
+                <article class="titulModelo">
+                    <div class="titulModelo">
+                        <h3>${dato.brand}</h3>
+                        <h4>${dato.category}</h4>
+                    </div>
+                    <div class="titulModelo">
+                        <h5>${dato.price}</h5>
+                    </div>
+                    <div class="mapita">
+                        <h2>¡¡Veni a probarla!!</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1875900548607!2d-58.44627502319495!3d-34.54880545460198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb436efe09303%3A0xfb39818e7624ac76!2sDigital%20House!5e0!3m2!1ses!2sar!4v1758315588162!5m2!1ses!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                        <h3 class="stock">${dato.stock}</h3>
+                    <div class="comprar">
+                        <a href="pasarelapagos.html">COMPRAR</a>
+                    </div>
+                </article>
+                <p class="descripcion">${dato.description}</p>            
+                    <ol class="tags">
+                        <li>Stratocaster</li>
+                        <li>Fender</li>
+                        <li>Celeste</li>
+                        <li>Diestro</li>
+                        <li>Vintage</li>
+                    </ol>
+            </section>
+        `
     })
     .catch(function(error){
-        console.log("error: " + error)
+        console.log(error)
     })
 
-
+    
 
 
 })

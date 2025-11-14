@@ -18,7 +18,7 @@ window.addEventListener("load", function(){
             let producto = resultados[i]
             productos.innerHTML += `
             <article>
-                <a href="./product.html"> <img class="index" src="${producto.thumbnail}" width="100"> </a>
+                <a href="./product.html?id=${producto.id}"> <img class="index" src="${producto.thumbnail}" width="100"> </a>
                 <div>    
                     <h2>${producto.title}</h2>
                     <h3>${producto.brand}</h3>
