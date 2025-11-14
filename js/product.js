@@ -1,26 +1,22 @@
 window.addEventListener("load", function(){
-
-    let productos = document.querySelector("#products")
+    let product = document.querySelector("#product")
 
     let url = 'https://dummyjson.com/products'
-
     fetch(url)
     .then(function(res){
         return res.json();
     })
     .then(function(data){
         let resultados = data.products
-
-        productos.innerHTML = ""
+        product.innerHTML = ""
         console.log(data)
-
         for(let i = 0; i < resultados.length; i++){
             let producto = resultados[i]
-            productos.innerHTML += `
+            product.innerHTML += `
             <article>
                 <a href="./product.html"> <img class="index" src="${producto.thumbnail}" width="100"> </a>
                 <div>    
-                    <h2>${producto.title}</h2>
+                    <h2>victor</h2>
                     <h3>${producto.brand}</h3>
                     <h4>${producto.category}</h4>
                     <p>${producto.description}</p>
@@ -33,4 +29,8 @@ window.addEventListener("load", function(){
     .catch(function(error){
         console.log("error: " + error)
     })
+
+
+
+
 })
