@@ -237,6 +237,7 @@ main.product{
     display: flex;
     flex-wrap: wrap;
 }
+
 article.titulModelo{
     width: 287px;
 
@@ -272,8 +273,12 @@ ol.tags{
     margin-left: 15%;
     width: 287px;
 }
+article.enviarRating{
+    display: flex;
+    justify-content: center;
+}
 div.rating{
-    margin-left: 30px;
+    margin-left: 87px;
 }
 .sistRating{
     display: none;
@@ -292,6 +297,20 @@ div.rating{
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
+}
+.reviewsGeneral{
+    display: flex;
+}
+
+div.cajaResenasClass{
+    margin-left: 180px;
+    justify-content: space-between;
+}
+
+#cajasResenas{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
 }
 
 .resultados {

@@ -1,5 +1,6 @@
 window.addEventListener("load", function(){
     let product = document.querySelector("#seccionProduct")
+    let reviewsGeneral = document.querySelector("#cajasResenas")
 
     let url = 'https://dummyjson.com/products'
     fetch(url)
@@ -75,13 +76,20 @@ window.addEventListener("load", function(){
                 </ol>
             </section>
         `
-
+        let reviews = dato.reviews
+        for(let i = 0; i < reviews.length; i++){
+            let review = reviews[i]
+            reviewsGeneral.innerHTML += `
+                <article  id="cajasResenas">
+                    <h3>${review.reviewerName}</h3>
+                    <h2>${review.comment}</h2>
+                    <p>${review.reviewerEmail}</p>
+                    <h5>${review.date}</h5>
+                </article>
+            `
+        }
     })
     .catch(function(error){
         console.log(error)
     })
-
-    
-
-
 })
