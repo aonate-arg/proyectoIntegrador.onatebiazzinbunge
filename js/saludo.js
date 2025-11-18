@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
     let logou = document.querySelector(".chau");
     let estado = localStorage.getItem("estadoLog");
 
-    if (estado == "true") {
+    if (estado == "True") {
         caja.innerHTML = "<a> LOGOUT </a> <h3> Bienvenido: "+ mail;
         caja.style.paddingTop = "1%";
         logou.innerHTML = " ";

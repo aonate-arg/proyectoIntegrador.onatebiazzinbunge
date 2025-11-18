@@ -1,4 +1,3 @@
-localStorage.clear();
 
 window.addEventListener("load",function(){
     let estado = "False"
@@ -12,27 +11,24 @@ window.addEventListener("load",function(){
 
     formulario.addEventListener("submit", function(event){
         event.preventDefault();
-        if (email.value = ""){
+        if (email.value == ""){
             alert1.innerHTML = "<strong>Este campo es obligatorio</strong>"
             alert1.style.color = "Red"
-        }
 
-
-
-        if (contra.value == "") {
+        } else if (contra.value == "") {
             alert2.innerHTML = "<strong>Este campo es obligatorio</strong>"
             alert2.style.color = "Red"
 
         } else if (contra.length < 6) {
-            alert("La contrasena debe tener minimo 6 caracteres!")
-        }
+            alert2.innerHTML = "<strong>La contraseña debe tener minimo 6 caracteres</strong>"
+            alert2.style.color = "Red"
 
-        if (email.length > 0 && contra.length > 6) {
+        } else if (contra.length > 6 && email.value != "") {
             estado = "True"
+            localStorage.setItem("estadoLog", JSON.stringify(estado))
+            localStorages.setItem("emailUsuario", JSON.stringify(email))
+            this.submit()
         }
     })
-
-    localStorage.setItem("emailUsuario", email)
-    this.localStorage.setItem("estadoLog", estado)
     
 })
