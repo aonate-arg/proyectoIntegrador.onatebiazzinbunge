@@ -276,9 +276,11 @@ ol.tags{
 article.enviarRating{
     display: flex;
     justify-content: center;
+    width: 588px;
+    height: 155px;
 }
 div.rating{
-    margin-left: 87px;
+    margin-left: 60px;
 }
 .sistRating{
     display: none;
@@ -302,15 +304,22 @@ div.rating{
     display: flex;
 }
 
-div.cajaResenasClass{
+article.cajaResenasClass{
+    display: flex;
+    display: none;
     margin-left: 180px;
+    background-color: red;
     justify-content: space-between;
+    width: 100%;
+    height: 155px;
 }
 
 #cajasResenas{
     display: flex;
+    flex-direction:column;
     justify-content: space-between;
     width: 300px;
+    height: 150px;
 }
 
 .resultados {

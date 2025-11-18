@@ -1,6 +1,6 @@
 window.addEventListener("load", function(){
     let product = document.querySelector("#seccionProduct")
-    let reviewsGeneral = document.querySelector("#cajasResenas")
+    let reviewsGeneral = document.querySelector("#pruebajs")
 
     let url = 'https://dummyjson.com/products'
     fetch(url)
@@ -59,7 +59,7 @@ window.addEventListener("load", function(){
                         <h4>${dato.category}</h4>
                     </div>
                     <div class="titulModelo">
-                        <h5>${dato.price}</h5>
+                        <h5>$${dato.price}</h5>
                     </div>
                     <div class="mapita">
                         <h2>¡¡Veni a probarla!!</h2>
@@ -80,12 +80,14 @@ window.addEventListener("load", function(){
         for(let i = 0; i < reviews.length; i++){
             let review = reviews[i]
             reviewsGeneral.innerHTML += `
-                <article  id="cajasResenas">
+            <article style="margin-left:15px;">
+                <div id="cajasResenas">
                     <h3>${review.reviewerName}</h3>
                     <h2>${review.comment}</h2>
                     <p>${review.reviewerEmail}</p>
                     <h5>${review.date}</h5>
-                </article>
+                </div>
+            </article>
             `
         }
     })
