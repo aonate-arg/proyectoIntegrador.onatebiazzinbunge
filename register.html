@@ -18,13 +18,15 @@
     <form class="register" action="./login.html" method="get">
         <div>
             <label for="email"></label>
-            <input id="email" type="email" name="mail" placeholder="Ingrese su email" value="" required>
+            <input id="email" type="text" name="mail" placeholder="Ingrese su email" value="" >
+            <p id="alert1"></p>
         </div>
         <div>
-            <input id="passs" type="password" name="contra" placeholder="Ingrese su contraseña" value="" required>
+            <input id="passs" type="password" name="contra" placeholder="Ingrese su contraseña" value="" >
+            <p id="alert2"></p>
         </div>
         <div>
-            <input id="pass" type="password" name="contra" placeholder="Repetir contraseña" value="" required>
+            <input id="pass" type="password" name="contra" placeholder="Repetir contraseña" value="">
         </div>
         <div>
             <button type="submit">Registrarme</button>
@@ -43,6 +45,7 @@
             <li>Victor Biazzin Rubinho</li>
         </ul>
     </footer>
+    <script src="./js/register.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

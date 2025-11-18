@@ -1,8 +1,8 @@
-window.addEventListener("load",function(){
-    let estado = "False"
+window.addEventListener("load", function(){
     let formulario = document.querySelector(".register");
     let email = this.document.querySelector("#email");
-    let contra = this.document.querySelector("#contrasena");
+    let contra = this.document.querySelector("#passs");
+    let contra2 = this.document.querySelector("#pass")
     let alert1 = this.document.querySelector("#alert1");
     let alert2 = this.document.querySelector("#alert2");
 
@@ -21,13 +21,11 @@ window.addEventListener("load",function(){
             alert2.style.fontSize = "14px"
             contra.style.marginLeft = "20%";
 
-
+        } else if(contra.value != contra2.value) {
+            alert("Las contraseñas debe ser iguales")
+            
         } else {
-            estado = "True";
-            localStorage.setItem("estadoLog", estado);
-            localStorage.setItem("emailUsuario", email.value); //averiguar .value
-            this.submit();
+            this.submit()
         }
     })
-    
 })
