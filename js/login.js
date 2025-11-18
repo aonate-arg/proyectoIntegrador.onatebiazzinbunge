@@ -7,7 +7,6 @@ window.addEventListener("load",function(){
     let contra = this.document.querySelector("#contrasena");
     let alert1 = this.document.querySelector("#alert1");
     let alert2 = this.document.querySelector("#alert2");
-   
 
     formulario.addEventListener("submit", function(event){
         event.preventDefault();
@@ -28,7 +27,7 @@ window.addEventListener("load",function(){
         } else {
             estado = "True";
             localStorage.setItem("estadoLog", estado);
-            localStorage.setItem("emailUsuario", email.value);
+            localStorage.setItem("emailUsuario", email.value); //averiguar .value
             this.submit();
         }
     })
