@@ -79,10 +79,18 @@ window.addEventListener("load", function(){
         let reviews = dato.reviews
         for(let i = 0; i < reviews.length; i++){
             let review = reviews[i]
+
+            //StratoRating para las Reviews (revisar porque no aparecen las imagenes)//
+            let stratoraiting = " "
+            for (let j = 0; j < review.rating; j++) {
+            stratoraiting += `<img src="/img/stratoratingmarcado.png" style="width:30px; height:30px; display:inline-block;">`
+            }
+
             reviewsGeneral.innerHTML += `
             <article style="margin-left:15px;">
                 <div id="cajasResenas">
                     <h3>${review.reviewerName}</h3>
+                    <div>${stratoraiting}</div>
                     <h2>${review.comment}</h2>
                     <p>${review.reviewerEmail}</p>
                     <h5>${review.date}</h5>
