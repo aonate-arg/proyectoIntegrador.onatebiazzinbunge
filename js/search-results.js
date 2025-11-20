@@ -1,5 +1,5 @@
 window.addEventListener("load", function() {
-    let tituloBusqueda = document.querySelector(".busqueda");
+    let tituloBusqueda = document.querySelector("#titulo-busqueda");
     let resultados = document.querySelector(".resultados");
     let queryString = location.search;
     let queryStringObj = new URLSearchParams(queryString);
