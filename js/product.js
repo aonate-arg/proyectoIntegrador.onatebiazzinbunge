@@ -65,9 +65,9 @@ window.addEventListener("load", function(){
             //StratoRating para las Reviews (revisar porque no aparecen las imagenes)//
             let stratoraiting = " "
             for (let j = 0; j < review.rating; j++) {
-            stratoraiting += `<img src="/img/stratoratingmarcado.png" style="width:30px; height:30px; display:inline-block;">`
+            stratoraiting += `<img src="./img/stratoratingmarcado.png" style="width:30px; height:30px; display:inline-block;">`
             }
-
+            
             reviewsGeneral.innerHTML += `
             <article style="margin-left:15px;">
                 <div id="cajasResenas">
