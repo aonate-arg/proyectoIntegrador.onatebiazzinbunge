@@ -1,5 +1,5 @@
 window.addEventListener("load", function() {
-    let tituloBusqueda = document.querySelector("#titulo-busqueda");
+    let tituloBusqueda = document.querySelector("#tituloBusqueda");
     let resultados = document.querySelector(".resultados");
 
     let url = `https://dummyjson.com/products`;
@@ -11,20 +11,51 @@ window.addEventListener("load", function() {
         .then(function(data){
             let productos = data.products;
             console.log(data);
-            resultados.innerHTML = "";
+            resultados.innerHTML = " ";
 
-            let queryString = location.search;
-            let queryStringObj = new URLSearchParams(queryString);
-            let searchTerm = queryStringObj.get("busqueda");
-            tituloBusqueda.innerHTML = ' '
-            tituloBusqueda.innerHTML = 'Resultados de búsqueda para: <strong>${searchTerm}</strong>';
+            //se me ocurre com posible problema que intente buscar algo y que porque este escrito en minusculas o mayusculas no lo encuentre, me gustaria en algunlugar poner .upper como en py//
+            let busqueda = location.search;
+            let busquedaObj = new URLSearchParams(busqueda);
+            let busquedaFin = busquedaObj.get("busqueda");
+            let busquedaFinFix = busquedaFin.toLowerCase()
 
-            if (productos.length === 0){
-                resultados.innerHTML = `
-                    No hay resultados para el término: 
-                    <strong>${searchTerm}</strong>
-                `;
+            console.log(busquedaFinFix)
+            tituloBusqueda.innerHTML = " "
+            tituloBusqueda.innerHTML = `
+                <h2 id="tituloBusqueda"> Busqueda: ${busquedaFin}</h2>
+            `
+           
+            for(let i = 0; i < productos.length; i++){
+                let nomTitulo = productos[i].title
+                let nomTituloFix = nomTitulo.toLowerCase()
+                console.log(nomTitulo)
+
+                if(busquedaFinFix == nomTituloFix){
+                    resultados.innerHTML = " "
+                    resultados.innerHTML = `
+                    <div class="resultados">
+                        <article>
+                            <a href="./product.html?id=${producto.id}"> <img class="index" src="${producto.thumbnail}" width="100"> </a>
+                            <div>    
+                                <h2>${producto.title}</h2>
+                                <h3>${producto.brand}</h3>
+                                <h4>${producto.category}</h4>
+                                <p>${producto.description}</p>
+                            </div>
+                            <a id="vermas" href="product.html">Ver +</a>
+                        </article>
+                    </div>
+                    `
+                }
             }
+            
+            //Solo si no se escribe ningun caracter lo muestra//
+            if (busquedaFin === ""){
+                tituloBusqueda.innerHTML = `
+                    <h2 id="tituloBusqueda">Debes escribir algo en el buscador</h2>
+                `
+            }
+
         })
         .catch(function(error){
             console.log("El error es: " + error);
