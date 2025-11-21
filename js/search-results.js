@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
     let tituloBusqueda = document.querySelector("#tituloBusqueda");
-    let resultados = document.querySelector(".resultados");
+    let resultados = document.querySelector("#resultados");
 
     let url = `https://dummyjson.com/products`;
     
@@ -30,21 +30,18 @@ window.addEventListener("load", function() {
                 let nomTituloFix = nomTitulo.toLowerCase()
                 console.log(nomTitulo)
 
-                if(busquedaFinFix == nomTituloFix){
-                    resultados.innerHTML = " "
+                if(busquedaFin == nomTitulo){
                     resultados.innerHTML = `
-                    <div class="resultados">
                         <article>
-                            <a href="./product.html?id=${producto.id}"> <img class="index" src="${producto.thumbnail}" width="100"> </a>
+                            <a href="./product.html?id=${productos.id}"> <img class="index" src="${productos.thumbnail}" width="100"> </a>
                             <div>    
-                                <h2>${producto.title}</h2>
-                                <h3>${producto.brand}</h3>
-                                <h4>${producto.category}</h4>
-                                <p>${producto.description}</p>
+                                <h2>${productos.title}</h2>
+                                <h3>${productos.brand}</h3>
+                                <h4>${productos.category}</h4>
+                                <p>${productos.description}</p>
                             </div>
-                            <a id="vermas" href="product.html">Ver +</a>
+                            <a id="vermas" href="./product.html?id=${productos.id}">Ver +</a>
                         </article>
-                    </div>
                     `
                 }
             }
