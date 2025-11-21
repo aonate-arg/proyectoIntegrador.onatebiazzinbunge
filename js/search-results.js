@@ -56,7 +56,11 @@ window.addEventListener("load", function() {
                     <h2 id="tituloBusqueda">Debes escribir algo en el buscador</h2>
                 `
             }
-
+            else if(busquedaFin == nomTitulo){
+                tituloBusqueda.innerHTML = `
+                    <h2 id="tituloBusqueda"> Busqueda: ${busquedaFin}</h2>
+                `
+            }
             else if (busquedaFin.length < 3 && busquedaFin.length != ""){
                 tituloBusqueda.innerHTML = `
                     <h2 id="tituloBusqueda">El término buscado debe contener al menos 3 caracteres</h2>
