@@ -28,19 +28,24 @@ window.addEventListener("load", function() {
             for(let i = 0; i < productos.length; i++){
                 let nomTitulo = productos[i].title
                 let nomTituloFix = nomTitulo.toLowerCase()
+                let id = productos[i].id
                 console.log(nomTitulo)
 
                 if(busquedaFin == nomTitulo){
+                    console.log(id)
+                    let posicion = id - 1
+                    let arrayProd = productos[posicion]
+                    console.log(arrayProd)
                     resultados.innerHTML = `
                         <article>
-                            <a href="./product.html?id=${productos.id}"> <img class="index" src="${productos.thumbnail}" width="100"> </a>
+                            <a href="./product.html?id=${arrayProd.id}"> <img class="index" src="${arrayProd.thumbnail}" width="100"> </a>
                             <div>    
-                                <h2>${productos.title}</h2>
-                                <h3>${productos.brand}</h3>
-                                <h4>${productos.category}</h4>
-                                <p>${productos.description}</p>
+                                <h2>${nomTitulo}</h2>
+                                <h3>${arrayProd.brand}</h3>
+                                <h4>${arrayProd.category}</h4>
+                                <p>${arrayProd.description}</p>
                             </div>
-                            <a id="vermas" href="./product.html?id=${productos.id}">Ver +</a>
+                            <a id="vermas" href="./product.html?id=${arrayProd.id}">Ver +</a>
                         </article>
                     `
                 }
