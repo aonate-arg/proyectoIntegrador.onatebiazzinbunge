@@ -15,7 +15,6 @@ window.addEventListener("load", function(){
             let nombre = categoria.name
             caja.innerHTML +=`<a href="./category.html?id=${nombre}"><h3>${nombre}</h3></a>`            
         }
-<<<<<<< HEAD
 
         let categoria = location.search;
         let categoriaObj = new URLSearchParams(categoria);
@@ -24,17 +23,11 @@ window.addEventListener("load", function(){
         
 
         
-=======
->>>>>>> a012cd58d927fd4ff8762ee2f56dcdf27a6f525c
     })
     .catch(function(error){
         console.log("el error es: "+ error);
         
     })
-<<<<<<< HEAD
-    let cate = this.localStorage.getItem("categoria")
-    console.log(cate)
-=======
 
     
         let categoria = location.search;
@@ -75,5 +68,4 @@ window.addEventListener("load", function(){
             }
             
         })
->>>>>>> a012cd58d927fd4ff8762ee2f56dcdf27a6f525c
 })
