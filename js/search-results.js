@@ -57,13 +57,13 @@ window.addEventListener("load", function() {
                 `
             }
 
-            if (busquedaFin.length < 3 && busquedaFin.length != ""){
+            else if (busquedaFin.length < 3 && busquedaFin.length != ""){
                 tituloBusqueda.innerHTML = `
                     <h2 id="tituloBusqueda">El término buscado debe contener al menos 3 caracteres</h2>
                 `                       
             }
 
-            if (productos === 0){
+            else {
                 tituloBusqueda.innerHTML = `
                     <h2 id="tituloBusqueda">No hay resultados para el término: ${busquedaFin}</h2>
                 `               
