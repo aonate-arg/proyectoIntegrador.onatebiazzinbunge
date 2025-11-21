@@ -50,7 +50,7 @@ window.addEventListener("load", function() {
                     `
                 }
             }
-            
+
             if (busquedaFin === ""){
                 tituloBusqueda.innerHTML = `
                     <h2 id="tituloBusqueda">Debes escribir algo en el buscador</h2>
@@ -67,7 +67,7 @@ window.addEventListener("load", function() {
                 tituloBusqueda.innerHTML = `
                     <h2 id="tituloBusqueda">No hay resultados para el término: ${busquedaFin}</h2>
                 `               
-            }
+            }  
 
         })
         .catch(function(error){
