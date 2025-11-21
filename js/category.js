@@ -20,8 +20,7 @@ window.addEventListener("load", function(){
         let categoria = location.search;
         let categoriaObj = new URLSearchParams(categoria);
         let categoriaFin = categoriaObj.get("id")
-        console.log(categoriaFin);
-        
+        localStorage.setItem("categoria", categoriaFin)        
         
 
         
@@ -30,4 +29,6 @@ window.addEventListener("load", function(){
         console.log("el error es: "+ error);
         
     })
+    let cate = this.localStorage.getItem("categoria")
+    console.log(cate)
 })

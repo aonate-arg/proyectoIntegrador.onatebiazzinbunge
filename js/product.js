@@ -16,20 +16,19 @@ window.addEventListener("load", function(){
     .then(function(data){
         let resultados = data
         seccionProduct.innerHTML = " "
-        
+
+        product.innerHTML = " "
+
         //Sist. de tags//
         let tag = resultados.tags
         console.log(tag)
         let printTag = " "
 
-        for (let j = 0; j < tag; j++){
-                printTag = ` 
+        for (let j = 0; j < tag.length; j++){
+                printTag += ` 
                 <li>${tag[j]}</li>
-                
-            `     
+            `
         }
-
-        product.innerHTML = " "
 
         product.innerHTML += `
             <section>

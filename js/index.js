@@ -36,7 +36,7 @@ window.addEventListener("load", function(){
 
     //Segundo Fetch para la otr parte de los productos//
     let productos2 = this.document.querySelector("#products2")
-    let urlRelojes = "https://dummyjson.com/products/category/mens-watches"
+    let urlRelojes = "https://dummyjson.com/products/category/"
     
     fetch(urlRelojes)
     .then(function(res){
