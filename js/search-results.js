@@ -51,11 +51,22 @@ window.addEventListener("load", function() {
                 }
             }
             
-            //Solo si no se escribe ningun caracter lo muestra//
             if (busquedaFin === ""){
                 tituloBusqueda.innerHTML = `
                     <h2 id="tituloBusqueda">Debes escribir algo en el buscador</h2>
                 `
+            }
+
+            else if (busquedaFin.length < 3 && busquedaFin.length != ""){
+                tituloBusqueda.innerHTML = `
+                    <h2 id="tituloBusqueda">El término buscado debe contener al menos 3 caracteres</h2>
+                `                       
+            }
+
+            else {
+                tituloBusqueda.innerHTML = `
+                    <h2 id="tituloBusqueda">No hay resultados para el término: ${busquedaFin}</h2>
+                `               
             }
 
         })
